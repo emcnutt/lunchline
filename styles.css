@@ -1,0 +1,51 @@
+body {
+    background: #14156F;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+.top {
+    z-index: 200;
+}
+
+.bottom {
+    z-index: 100;
+}
+
+.image {
+    width: 750px;
+    height: 600px;
+    background-image: url('bg.png');
+    background-size: 100%;
+    background-repeat: repeat;
+}
+
+.anim {
+    height: 598px;
+    width: 748px;
+    background: linear-gradient(180deg, #dd340a 0%, #14156f 40%, #14156f 60%, #dd340a 100%);
+    background-size: 100% 200%;
+    background-attachment: fixed;
+    background-position: 0% 0%;
+    background-repeat: repeat;
+    animation: move 3s linear infinite;
+}
+
+@keyframes move {
+    0% {background-position: 0% 0%}
+    100% {background-position: 0% 200%}
+}
